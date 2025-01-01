@@ -1,0 +1,60 @@
+# Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.sqlite3
+db.sqlite3
+*.log
+*.pot
+*.mo
+*.db
+
+# Django migrations
+migrations/
+
+# Virtual environment
+venv/
+env/
+.venv/
+.env/
+
+# .env file for sensitive credentials
+.env
+
+# macOS
+.DS_Store
+
+# IDE/Editor
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Node.js
+node_modules/
+
+# React build files
+build/
+dist/
+
+# npm logs
+npm-debug.log
+yarn-error.log
+
+# Jest coverage reports
+coverage/
+
+# Django static files (can be useful to include in production, but not in source control)
+staticfiles/
+
+# Pytest cache
+.cache
+
+# If you are using a Dockerfile, you might want to exclude the following:
+docker-compose.override.yml
+
+# Local config files
+*.local
+*.bak
+*.swp
