@@ -8,6 +8,7 @@ import Stack from '@mui/material/Stack';
 import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
 import { CardMedia } from '@mui/material';
+import { useRef, useState } from 'react';
 
 import { visuallyHidden } from '@mui/utils';
 import { styled } from '@mui/material/styles';
@@ -37,7 +38,19 @@ const StyledBox = styled('div')(({ theme }) => ({
   }),
 }));
 
+
 export default function Hero() {
+
+  const videoRef = useRef<HTMLVideoElement | null>(null);
+  const [playbackSpeed, setPlaybackSpeed] = useState(0.3);
+  const homeVideo = require("../assets/videos/Prism.mov")
+
+  const setPlayBack = () => {
+    if (videoRef.current) { // Ensure videoRef.current is not null
+      videoRef.current.playbackRate = 0.5;
+    }
+  };
+
   return (
     <Box
       id="hero"
@@ -51,6 +64,7 @@ export default function Hero() {
           backgroundImage:
             'radial-gradient(ellipse 80% 50% at 50% -20%, hsl(210, 100%, 16%), transparent)',
         }),
+        height: "105vh"
       })}
     >
       <Container
@@ -62,11 +76,28 @@ export default function Hero() {
           pb: { xs: 8, sm: 12 },
         }}
       >
-        
+        <video 
+  ref={videoRef} 
+  src={homeVideo} 
+  style={{
+    position: "absolute",
+    top: "0",
+    left: "50%",
+    transform: "translateX(-50%)",
+    objectFit: "cover",
+    zIndex: "1",
+    minHeight: "100%",
+    width: "100%",
+    height: "100vh",
+  }} 
+  autoPlay muted loop
+  onCanPlay={() => setPlayBack()}
+/>
+
         <Stack
-          spacing={2}
+          spacing={3}
           useFlexGap
-          sx={{ alignItems: 'center', width: { xs: '100%', sm: '70%' } }}
+          sx={{ alignItems: 'center', width: { xs: '100%', sm: '70%' }, zIndex:"10", paddingTop: "10%", height: "100vh" }}
         >
           <Typography
             variant="h1"
@@ -74,6 +105,7 @@ export default function Hero() {
               display: 'flex',
               flexDirection: { xs: 'column', sm: 'row' },
               alignItems: 'center',
+              color: "white",
               fontSize: 'clamp(3rem, 10vw, 3.5rem)',
             }}
           >
@@ -83,10 +115,7 @@ export default function Hero() {
               variant="h1"
               sx={(theme) => ({
                 fontSize: 'inherit',
-                color: 'secondary.light',
-                ...theme.applyStyles('dark', {
-                  color: 'secondary.dark',
-                }),
+                color: 'secondary.dark',
               })}
             >
               finance
@@ -95,13 +124,13 @@ export default function Hero() {
           <Typography
             sx={{
               textAlign: 'center',
-              color: 'text.secondary',
               width: { sm: '100%', md: '80%' },
+              color: "white"
             }}
           >
-            Explore our cutting-edge dashboard, delivering high-quality solutions
-            tailored to your needs. Elevate your experience with top-tier features
-            and services.
+            Hashira is a gamified finance app designed to help you reach your 
+            savings and investment goals. By setting and achieving financial milestones, 
+            you can track their progress, gain rewards, and level up in your personal financial journey.
           </Typography>
           <Stack
             direction={{ xs: 'column', sm: 'row' }}
@@ -138,17 +167,16 @@ export default function Hero() {
           </Stack>
           <Typography
             variant="caption"
-            color="text.secondary"
+            color="white"
             sx={{ textAlign: 'center' }}
           >
             By clicking &quot;Start now&quot; you agree to our&nbsp;
-            <Link href="#" color="primary">
+            <Link href="#" color="white">
               Terms & Conditions
             </Link>
             .
           </Typography>
         </Stack>
-        <StyledBox id="image" />
       </Container>
     </Box>
   );

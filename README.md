@@ -48,6 +48,7 @@
     <li>Node.js (for frontend development)</li>
     <li>Python (for backend development)</li>
     <li>Django (for backend development)</li>
+    <li>MySQL (backend db)</li>
 </ul>
 
 <h3>Frontend Setup (React)</h3>
