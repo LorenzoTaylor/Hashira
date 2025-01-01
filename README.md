@@ -3,63 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hashira - Gamified Finance App</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            background-color: #f4f4f4;
-            color: #333;
-            padding: 20px;
-        }
-        h1, h2 {
-            color: #2c3e50;
-        }
-        h3 {
-            color: #34495e;
-        }
-        p {
-            margin: 10px 0;
-        }
-        ul {
-            margin-left: 20px;
-        }
-        code {
-            font-family: monospace;
-            background-color: #ecf0f1;
-            padding: 2px 6px;
-        }
-        pre {
-            background-color: #ecf0f1;
-            padding: 20px;
-            overflow-x: auto;
-            font-family: monospace;
-        }
-        .note {
-            background-color: #f9ebc9;
-            padding: 10px;
-            border-left: 5px solid #f1c40f;
-        }
-        .highlight {
-            background-color: #f39c12;
-            padding: 5px;
-        }
-        .code-block {
-            background-color: #2c3e50;
-            color: white;
-            padding: 20px;
-            border-radius: 5px;
-            font-family: monospace;
-        }
-        a {
-            color: #3498db;
-        }
-    </style>
 </head>
 <body>
 
 <h1>Hashira - Gamified Finance App</h1>
 
+<img src="./src/assets/images/LandingPage.png" />
 <p><strong>Hashira</strong> is a gamified finance app designed to help users reach their savings and investment goals by evolving through the ranks, ultimately becoming a <strong>Finance Hashira</strong>. By setting and achieving financial milestones, users can track their progress, gain rewards, and level up in their personal financial journey.</p>
 
 <h2>🚀 Project Status</h2>

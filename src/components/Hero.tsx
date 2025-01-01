@@ -62,15 +62,7 @@ export default function Hero() {
           pb: { xs: 8, sm: 12 },
         }}
       >
-        <CardMedia
-            component='video'
-            image={"/src/assets/videos/Prism.mov"}
-            autoPlay
-            sx={{
-              height: "100vh",
-              width: "100vw"
-            }}
-        />
+        
         <Stack
           spacing={2}
           useFlexGap
