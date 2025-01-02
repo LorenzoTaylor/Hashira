@@ -51,6 +51,7 @@ export default function Laptop() {
               autoPlay
               loop
               muted
+              playsInline
               style={{
                 position: "absolute",
                 top: "50%",

@@ -90,7 +90,7 @@ export default function Hero() {
     width: "100%",
     height: "100vh",
   }} 
-  autoPlay muted loop
+  autoPlay muted loop playsInline
   onCanPlay={() => setPlayBack()}
 />
 
