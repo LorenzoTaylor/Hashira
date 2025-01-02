@@ -60,6 +60,7 @@ export default function Laptop() {
                 width: "100%",
                 height: "100%",
                 objectFit: "cover", // Ensures the video fills the container without stretching
+                borderRadius: "22px"
               }}
               src={DashVideo}
             />
