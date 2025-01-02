@@ -15,13 +15,13 @@ import CheckCircleRoundedIcon from '@mui/icons-material/CheckCircleRounded';
 
 const tiers = [
   {
-    title: 'Free',
+    title: 'Essential',
     price: '0',
     description: [
-      '10 users included',
-      '2 GB of storage',
-      'Help center access',
-      'Email support',
+      'Track basic financial levels',
+      'Access to foundational financial videos',
+      'View stock updates with limited refreshes',
+      'Basic email support',
     ],
     buttonText: 'Sign up for free',
     buttonVariant: 'outlined',
@@ -30,27 +30,28 @@ const tiers = [
   {
     title: 'Professional',
     subheader: 'Recommended',
-    price: '15',
+    price: '5',
     description: [
-      '20 users included',
-      '10 GB of storage',
-      'Help center access',
+      'Advanced financial tracking',
+      'Exclusive financial video library',
+      'Unlimited stock update refreshes',
       'Priority email support',
-      'Dedicated team',
-      'Best deals',
+      'Dedicated financial insights',
+      'Exclusive partner discounts',
     ],
     buttonText: 'Start now',
     buttonVariant: 'contained',
     buttonColor: 'secondary',
   },
   {
-    title: 'Enterprise',
-    price: '30',
+    title: 'Premium',
+    price: '10',
     description: [
-      '50 users included',
-      '30 GB of storage',
-      'Help center access',
+      'Comprehensive financial analysis tools',
+      'Full access to financial video courses',
+      'Real-time stock updates',
       'Phone & email support',
+      'Customizable financial dashboards',
     ],
     buttonText: 'Contact us',
     buttonVariant: 'outlined',
@@ -87,10 +88,7 @@ export default function Pricing() {
           Pricing
         </Typography>
         <Typography variant="body1" sx={{ color: 'text.secondary' }}>
-          Quickly build an effective pricing table for your potential customers with
-          this layout. <br />
-          It&apos;s built with default Material UI components with little
-          customization.
+          Choose the plan that suits your financial journey. Each plan is designed to help you achieve your financial goals with tailored features and support.
         </Typography>
       </Box>
       <Grid
@@ -100,7 +98,7 @@ export default function Pricing() {
       >
         {tiers.map((tier) => (
           <Grid
-            size={{ xs: 12, sm: tier.title === 'Enterprise' ? 12 : 6, md: 4 }}
+            size={{ xs: 12, sm: tier.title === 'Premium' ? 12 : 6, md: 4 }}
             key={tier.title}
           >
             <Card
@@ -177,8 +175,8 @@ export default function Pricing() {
                           width: 20,
                         },
                         tier.title === 'Professional'
-                          ? { color: 'primary.light' }
-                          : { color: 'primary.main' },
+                          ? { color: 'secondary.dark' }
+                          : { color: 'secondary.main' },
                       ]}
                     />
                     <Typography
@@ -200,6 +198,14 @@ export default function Pricing() {
                   fullWidth
                   variant={tier.buttonVariant as 'outlined' | 'contained'}
                   color={tier.buttonColor as 'primary' | 'secondary'}
+                  sx={{
+                    ...(tier.buttonVariant === 'contained' && {
+                      background: 'linear-gradient(80deg, rgba(214,0,186,1) 0%, rgba(0,212,255,1) 100%)',
+                      '&:hover': {
+                        background: 'linear-gradient(80deg, rgba(214,0,186,1) 0%, rgba(0,212,255,1) 100%)',
+                      },
+                    }),
+                  }}
                 >
                   {tier.buttonText}
                 </Button>

@@ -15,39 +15,39 @@ import ThumbUpAltRoundedIcon from '@mui/icons-material/ThumbUpAltRounded';
 const items = [
   {
     icon: <SettingsSuggestRoundedIcon />,
-    title: 'Adaptable performance',
+    title: 'Personalized Performance',
     description:
-      'Our product effortlessly adjusts to your needs, boosting efficiency and simplifying your tasks.',
+      'Hashira adapts to your financial needs, offering tailored insights for smarter spending and savings.',
   },
   {
     icon: <ConstructionRoundedIcon />,
-    title: 'Built to last',
+    title: 'Built for Growth',
     description:
-      'Experience unmatched durability that goes above and beyond with lasting investment.',
+      'Scale your financial journey with a platform designed for long-term stability and growth.',
   },
   {
     icon: <ThumbUpAltRoundedIcon />,
-    title: 'Great user experience',
+    title: 'User-Friendly',
     description:
-      'Integrate our product into your routine with an intuitive and easy-to-use interface.',
+      'Enjoy a seamless experience with an intuitive design that makes managing finances easy.',
   },
   {
     icon: <AutoFixHighRoundedIcon />,
-    title: 'Innovative functionality',
+    title: 'Innovative Tools',
     description:
-      'Stay ahead with features that set new standards, addressing your evolving needs better than the rest.',
+      'Stay ahead with advanced features that help you track, manage, and grow your finances.',
   },
   {
     icon: <SupportAgentRoundedIcon />,
-    title: 'Reliable support',
+    title: 'Responsive Support',
     description:
-      'Count on our responsive customer support, offering assistance that goes beyond the purchase.',
+      'Get the help you need anytime with dedicated customer support tailored to your financial journey.',
   },
   {
     icon: <QueryStatsRoundedIcon />,
-    title: 'Precision in every detail',
+    title: 'Data Insights',
     description:
-      'Enjoy a meticulously crafted product where small touches make a significant impact on your overall experience.',
+      'Make informed decisions with accurate, data-driven insights into your financial activity.',
   },
 ];
 
@@ -81,9 +81,7 @@ export default function Highlights() {
             Highlights
           </Typography>
           <Typography variant="body1" sx={{ color: 'grey.400' }}>
-            Explore why our product stands out: adaptability, durability,
-            user-friendly design, and innovation. Enjoy reliable customer support and
-            precision in every detail.
+            See how Hashira supports your financial journey with personalized tools, growth potential, and data-driven insights.
           </Typography>
         </Box>
         <Grid container spacing={2}>

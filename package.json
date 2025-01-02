@@ -10,6 +10,7 @@
     "@types/react-dom": "latest",
     "react": "latest",
     "react-dom": "latest",
+    "react-router-dom": "^7.1.1",
     "typescript": "latest"
   },
   "description": "https://github.com/mui/material-ui/blob/v6.3.0/docs/data/material/templates/marketing-page/MarketingPage.tsx",
