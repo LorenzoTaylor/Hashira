@@ -12,11 +12,12 @@ import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
 import Stack from '@mui/material/Stack';
 import MuiCard from '@mui/material/Card';
-import { styled } from '@mui/material/styles';
+import { styled, useTheme } from '@mui/material/styles';
 import ForgotPassword from './ForgotPassword';
 import { GoogleIcon, FacebookIcon, SitemarkIcon } from './CustomIcons';
 import AppTheme from '../../theme/AppTheme';
 import ColorModeSelect from '../../theme/ColorModeSelect';
+import { useColorScheme } from '@mui/material/styles';
 
 const Card = styled(MuiCard)(({ theme }) => ({
   display: 'flex',
@@ -114,13 +115,18 @@ export default function SignIn(props: { disableCustomTheme?: boolean }) {
     return isValid;
   };
 
+  const LogoLight = require("../../assets/icons/Logo_Light.png");
+  const LogoDark = require("../../assets/icons/Logo_Dark.png");
+
+  const theme = useTheme(); // Access theme object directly
+  const mode = theme.palette.mode; // Get the current theme mode
+
   return (
     <AppTheme {...props}>
       <CssBaseline enableColorScheme />
       <SignInContainer direction="column" justifyContent="space-between">
         <ColorModeSelect sx={{ position: 'fixed', top: '1rem', right: '1rem' }} />
         <Card variant="outlined">
-          <SitemarkIcon />
           <Typography
             component="h1"
             variant="h4"

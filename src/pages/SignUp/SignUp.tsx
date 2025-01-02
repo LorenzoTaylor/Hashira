@@ -16,6 +16,7 @@ import { styled } from '@mui/material/styles';
 import AppTheme from '../../theme/AppTheme';
 import { GoogleIcon, FacebookIcon, SitemarkIcon } from './CustomIcons';
 import ColorModeSelect from '../../theme/ColorModeSelect';
+import { useColorScheme } from '@mui/material/styles';
 
 const Card = styled(MuiCard)(({ theme }) => ({
   display: 'flex',
@@ -118,14 +119,18 @@ export default function SignUp(props: { disableCustomTheme?: boolean }) {
     });
   };
 
+  const LogoLight = require("../../assets/icons/Logo_Light.png");
+  const LogoDark = require("../../assets/icons/Logo_Dark.png");
+
+  const {mode} = useColorScheme();
+
   return (
     <AppTheme {...props}>
       <CssBaseline enableColorScheme />
       <ColorModeSelect sx={{ position: 'fixed', top: '1rem', right: '1rem' }} />
       <SignUpContainer direction="column" justifyContent="space-between">
         <Card variant="outlined">
-          <SitemarkIcon />
-          <Typography
+        <Typography
             component="h1"
             variant="h4"
             sx={{ width: '100%', fontSize: 'clamp(2rem, 10vw, 2.15rem)' }}

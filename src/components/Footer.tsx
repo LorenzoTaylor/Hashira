@@ -11,15 +11,12 @@ import Typography from '@mui/material/Typography';
 import FacebookIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import TwitterIcon from '@mui/icons-material/X';
-import SitemarkIcon from './SitemarkIcon';
+import { useColorScheme } from '@mui/material';
 
 function Copyright() {
   return (
     <Typography variant="body2" sx={{ color: 'text.secondary', mt: 1 }}>
-      {'Copyright © '}
-      <Link color="text.secondary" href="https://mui.com/">
-        Sitemark
-      </Link>
+      {'Copyright © Hashira'}
       &nbsp;
       {new Date().getFullYear()}
     </Typography>
@@ -27,6 +24,11 @@ function Copyright() {
 }
 
 export default function Footer() {
+  const LogoLight = require("../assets/icons/Logo_Light.png");
+  const LogoDark = require("../assets/icons/Logo_Dark.png");
+
+  const {mode} = useColorScheme();
+
   return (
     <Container
       sx={{
@@ -55,7 +57,7 @@ export default function Footer() {
           }}
         >
           <Box sx={{ width: { xs: '100%', sm: '60%' } }}>
-            <SitemarkIcon />
+            <img src={mode == "light" ? (LogoLight): (LogoDark)} style={{maxHeight: "40px"}}/>
             <Typography variant="body2" gutterBottom sx={{ fontWeight: 600, mt: 2 }}>
               Join the newsletter
             </Typography>

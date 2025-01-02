@@ -42,7 +42,7 @@ export default function FAQ() {
           textAlign: { sm: 'left', md: 'center' },
         }}
       >
-        Frequently asked questions
+        Frequently Asked Questions
       </Typography>
       <Box sx={{ width: '100%' }}>
         <Accordion
@@ -55,7 +55,7 @@ export default function FAQ() {
             id="panel1d-header"
           >
             <Typography component="span" variant="subtitle2">
-              How do I contact customer support if I have a question or issue?
+              How can I reach customer support for questions or issues?
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
@@ -64,10 +64,10 @@ export default function FAQ() {
               gutterBottom
               sx={{ maxWidth: { sm: '100%', md: '70%' } }}
             >
-              You can reach our customer support team by emailing&nbsp;
-              <Link href="mailto:support@email.com">support@email.com</Link>
-              &nbsp;or calling our toll-free number. We&apos;re here to assist you
-              promptly.
+              If you have any questions or need assistance, you can easily contact our
+              support team by emailing{' '}
+              <Link href="mailto:support@email.com">support@email.com</Link> or by calling
+              our toll-free number. We’re available to help with any inquiries you have.
             </Typography>
           </AccordionDetails>
         </Accordion>
@@ -81,7 +81,7 @@ export default function FAQ() {
             id="panel2d-header"
           >
             <Typography component="span" variant="subtitle2">
-              Can I return the product if it doesn&apos;t meet my expectations?
+              How do I track my financial goals using Hashira?
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
@@ -90,9 +90,10 @@ export default function FAQ() {
               gutterBottom
               sx={{ maxWidth: { sm: '100%', md: '70%' } }}
             >
-              Absolutely! We offer a hassle-free return policy. If you&apos;re not
-              completely satisfied, you can return the product within [number of
-              days] days for a full refund or exchange.
+              Hashira offers a variety of tools to help you track your financial goals.
+              Simply connect your bank accounts, set your targets, and monitor your progress
+              in real time. Our intuitive dashboard makes it easy to stay on top of your
+              finances and adjust as needed.
             </Typography>
           </AccordionDetails>
         </Accordion>
@@ -106,7 +107,7 @@ export default function FAQ() {
             id="panel3d-header"
           >
             <Typography component="span" variant="subtitle2">
-              What makes your product stand out from others in the market?
+              What makes Hashira different from other financial tracking tools?
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
@@ -115,9 +116,10 @@ export default function FAQ() {
               gutterBottom
               sx={{ maxWidth: { sm: '100%', md: '70%' } }}
             >
-              Our product distinguishes itself through its adaptability, durability,
-              and innovative features. We prioritize user satisfaction and
-              continually strive to exceed expectations in every aspect.
+              Hashira sets itself apart by offering personalized financial insights,
+              the ability to track both long-term and short-term goals, and seamless
+              integration with multiple bank accounts. We prioritize simplicity and ease
+              of use to empower users to take control of their financial journey.
             </Typography>
           </AccordionDetails>
         </Accordion>
@@ -131,7 +133,7 @@ export default function FAQ() {
             id="panel4d-header"
           >
             <Typography component="span" variant="subtitle2">
-              Is there a warranty on the product, and what does it cover?
+              Is my data safe with Hashira?
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
@@ -140,10 +142,10 @@ export default function FAQ() {
               gutterBottom
               sx={{ maxWidth: { sm: '100%', md: '70%' } }}
             >
-              Yes, our product comes with a [length of warranty] warranty. It covers
-              defects in materials and workmanship. If you encounter any issues
-              covered by the warranty, please contact our customer support for
-              assistance.
+              Yes, your privacy and security are our top priorities. Hashira uses
+              industry-standard encryption to protect your data. We never share or sell
+              your personal information, and we work hard to ensure your financial data is
+              safe and secure at all times.
             </Typography>
           </AccordionDetails>
         </Accordion>

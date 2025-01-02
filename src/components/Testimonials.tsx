@@ -11,46 +11,46 @@ import { useTheme } from '@mui/system';
 
 const userTestimonials = [
   {
-    avatar: <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />,
-    name: 'Remy Sharp',
-    occupation: 'Senior Engineer',
+    avatar: <Avatar alt="Giyu Tomioka" src="/static/images/avatar/1.jpg" />,
+    name: 'Giyu Tomioka',
+    occupation: 'Water Hashira',
     testimonial:
-      "I absolutely love how versatile this product is! Whether I'm tackling work projects or indulging in my favorite hobbies, it seamlessly adapts to my changing needs. Its intuitive design has truly enhanced my daily routine, making tasks more efficient and enjoyable.",
+      "I absolutely love how versatile the Hashira app is! Whether I'm tackling my daily tasks or tracking my progress, it seamlessly adapts to my needs. Its intuitive design has truly enhanced my routine, making tasks more efficient and manageable.",
   },
   {
-    avatar: <Avatar alt="Travis Howard" src="/static/images/avatar/2.jpg" />,
-    name: 'Travis Howard',
-    occupation: 'Lead Product Designer',
+    avatar: <Avatar alt="Kanao Tsuyuri" src="/static/images/avatar/2.jpg" />,
+    name: 'Kanao Tsuyuri',
+    occupation: 'Flower Hashira',
     testimonial:
-      "One of the standout features of this product is the exceptional customer support. In my experience, the team behind this product has been quick to respond and incredibly helpful. It's reassuring to know that they stand firmly behind their product.",
+      "One of the standout features of the Hashira app is the exceptional customer support. The team behind it is always quick to respond and incredibly helpful. It's reassuring to know that they stand firmly behind their product.",
   },
   {
-    avatar: <Avatar alt="Cindy Baker" src="/static/images/avatar/3.jpg" />,
-    name: 'Cindy Baker',
-    occupation: 'CTO',
+    avatar: <Avatar alt="Shinobu Kocho" src="/static/images/avatar/3.jpg" />,
+    name: 'Shinobu Kocho',
+    occupation: 'Insect Hashira',
     testimonial:
-      'The level of simplicity and user-friendliness in this product has significantly simplified my life. I appreciate the creators for delivering a solution that not only meets but exceeds user expectations.',
+      'The level of simplicity and user-friendliness in the Hashira app has made my life much easier. I appreciate how it meets and exceeds my expectations, helping me track everything efficiently.',
   },
   {
-    avatar: <Avatar alt="Remy Sharp" src="/static/images/avatar/4.jpg" />,
-    name: 'Julia Stewart',
-    occupation: 'Senior Engineer',
+    avatar: <Avatar alt="Tengen Uzui" src="/static/images/avatar/4.jpg" />,
+    name: 'Tengen Uzui',
+    occupation: 'Sound Hashira',
     testimonial:
-      "I appreciate the attention to detail in the design of this product. The small touches make a big difference, and it's evident that the creators focused on delivering a premium experience.",
+      "I appreciate the attention to detail in the design of the Hashira app. The small touches make a big difference, and it's clear that a lot of thought went into delivering a premium experience.",
   },
   {
-    avatar: <Avatar alt="Travis Howard" src="/static/images/avatar/5.jpg" />,
-    name: 'John Smith',
-    occupation: 'Product Designer',
+    avatar: <Avatar alt="Mitsuri Kanroji" src="/static/images/avatar/5.jpg" />,
+    name: 'Mitsuri Kanroji',
+    occupation: 'Love Hashira',
     testimonial:
-      "I've tried other similar products, but this one stands out for its innovative features. It's clear that the makers put a lot of thought into creating a solution that truly addresses user needs.",
+      "I've tried other similar apps, but the Hashira app stands out with its innovative features. It's clear that the creators have put a lot of thought into crafting a solution that addresses user needs.",
   },
   {
-    avatar: <Avatar alt="Cindy Baker" src="/static/images/avatar/6.jpg" />,
-    name: 'Daniel Wolf',
-    occupation: 'CDO',
+    avatar: <Avatar alt="Muichiro Tokito" src="/static/images/avatar/6.jpg" />,
+    name: 'Muichiro Tokito',
+    occupation: 'Mist Hashira',
     testimonial:
-      "The quality of this product exceeded my expectations. It's durable, well-designed, and built to last. Definitely worth the investment!",
+      "The quality of the Hashira app exceeded my expectations. It's fast, intuitive, and built to last. Definitely worth the investment!",
   },
 ];
 
@@ -109,9 +109,9 @@ export default function Testimonials() {
           Testimonials
         </Typography>
         <Typography variant="body1" sx={{ color: 'text.secondary' }}>
-          See what our customers love about our products. Discover how we excel in
-          efficiency, durability, and satisfaction. Join us for quality, innovation,
-          and reliable support.
+          See what our customers love about Hashira app. Discover how it excels in
+          efficiency, simplicity, and user support. Join us for quality, innovation,
+          and a seamless experience.
         </Typography>
       </Box>
       <Grid container spacing={2}>

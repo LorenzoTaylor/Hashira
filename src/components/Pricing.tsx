@@ -177,8 +177,8 @@ export default function Pricing() {
                           width: 20,
                         },
                         tier.title === 'Professional'
-                          ? { color: 'primary.light' }
-                          : { color: 'primary.main' },
+                          ? { color: 'secondary.dark' }
+                          : { color: 'secondary.main' },
                       ]}
                     />
                     <Typography
@@ -196,13 +196,22 @@ export default function Pricing() {
                 ))}
               </CardContent>
               <CardActions>
-                <Button
-                  fullWidth
-                  variant={tier.buttonVariant as 'outlined' | 'contained'}
-                  color={tier.buttonColor as 'primary' | 'secondary'}
-                >
-                  {tier.buttonText}
-                </Button>
+              <Button
+  fullWidth
+  variant={tier.buttonVariant as 'outlined' | 'contained'}
+  color={tier.buttonColor as 'primary' | 'secondary'}
+  sx={{
+    ...(tier.buttonVariant === 'contained' && {
+      background: 'linear-gradient(80deg, rgba(214,0,186,1) 0%, rgba(0,212,255,1) 100%)',
+      '&:hover': {
+        background: 'linear-gradient(80deg, rgba(214,0,186,1) 0%, rgba(0,212,255,1) 100%)',
+      },
+    }),
+  }}
+>
+  {tier.buttonText}
+</Button>
+
               </CardActions>
             </Card>
           </Grid>
