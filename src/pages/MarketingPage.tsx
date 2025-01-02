@@ -11,6 +11,7 @@ import Testimonials from '../components/Testimonials';
 import FAQ from '../components/FAQ';
 import Footer from '../components/Footer';
 import AppTheme from '../theme/AppTheme';
+import Laptop from '../components/Laptop';
 
 export default function MarketingPage(props: { disableCustomTheme?: boolean }) {
   return (
@@ -21,6 +22,7 @@ export default function MarketingPage(props: { disableCustomTheme?: boolean }) {
       <Hero />
       <div>
         <LogoCollection />
+        <Laptop />
         <Features />
         <Divider />
         <Testimonials />
