@@ -13,6 +13,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
 import Sitemark from './SitemarkIcon';
 import ColorModeIconDropdown from '../theme/ColorModeIconDropdown';
+import { Link } from 'react-router-dom';
 
 const StyledToolbar = styled(Toolbar)(({ theme }) => ({
   display: 'flex',
@@ -85,12 +86,16 @@ export default function AppAppBar() {
               alignItems: 'center',
             }}
           >
-            <Button color="primary" variant="text" size="small">
-              Sign in
-            </Button>
-            <Button color="primary" variant="contained" size="small">
-              Sign up
-            </Button>
+            <Link to='/sign-in'>
+              <Button color="primary" variant="text" size="small" >
+                Sign in
+              </Button>
+            </Link>
+            <Link to='/sign-up'>
+              <Button color="primary" variant="contained" size="small">
+                Sign up
+              </Button>
+            </Link>
             <ColorModeIconDropdown />
           </Box>
           <Box sx={{ display: { xs: 'flex', md: 'none' }, gap: 1 }}>

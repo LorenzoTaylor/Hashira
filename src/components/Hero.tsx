@@ -95,18 +95,23 @@ export default function Hero() {
 />
 
         <Stack
-          spacing={3}
+          spacing={2}
           useFlexGap
-          sx={{ alignItems: 'center', width: { xs: '100%', sm: '70%' }, zIndex:"10", paddingTop: "10%", height: "100vh" }}
+          sx={{ alignItems: 'center', display: "flex", justifyContent: "flex-start", width: { xs: '100%', sm: '70%' }, zIndex:"10", paddingTop: "3%", height: "100vh" }}
         >
           <Typography
             variant="h1"
             sx={{
               display: 'flex',
-              flexDirection: { xs: 'column', sm: 'row' },
+              flexDirection: { xs: 'column', sm: 'column' },
               alignItems: 'center',
+              justifyContent: "center",
+              textAlign: "center",
               color: "white",
               fontSize: 'clamp(3rem, 10vw, 3.5rem)',
+              textShadow: "-0.2px -0.2px 0 #000, 0.2px -0.2px 0 #000, -0.2px 0.2px 0 #000, 0.2px 0.2px 0 #000",
+
+              
             }}
           >
             Gamify your&nbsp;
@@ -123,9 +128,10 @@ export default function Hero() {
           </Typography>
           <Typography
             sx={{
-              textAlign: 'center',
-              width: { sm: '100%', md: '80%' },
-              color: "white"
+              width: { sm: '100%', md: '100%' },
+              color: "white",
+              textShadow: "-0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000, 0.5px 0.5px 0 #000",
+              textAlign: "center",
             }}
           >
             Hashira is a gamified finance app designed to help you reach your 
@@ -168,7 +174,10 @@ export default function Hero() {
           <Typography
             variant="caption"
             color="white"
-            sx={{ textAlign: 'center' }}
+            sx={{ textAlign: 'center',
+                  textShadow: "-0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000, 0.5px 0.5px 0 #000",
+
+             }}
           >
             By clicking &quot;Start now&quot; you agree to our&nbsp;
             <Link href="#" color="white">
